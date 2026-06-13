@@ -9,7 +9,7 @@ const services = [
       "Set de bain, savon noir et tebrima, gommage à la fleur d’oranger, shampoing et savonnage.",
     price: '300 DH',
     duration: 'Rituel hammam',
-    image: '/images/services/service-hammam-traditionnel.png',
+    image: `${import.meta.env.BASE_URL}images/services/service-hammam-traditionnel.png`,
   },
   {
     number: '02',
@@ -19,7 +19,7 @@ const services = [
       "Set de bain, savon noir et tebrima, enveloppement détox au café et fleur d’oranger, masque visage exfoliant et hydratant, shampoing et savonnage.",
     price: '400 DH',
     duration: 'Rituel hammam premium',
-    image: '/images/services/service-hammam-royale.png',
+    image: `${import.meta.env.BASE_URL}images/services/service-hammam-royale.png`,
   },
   {
     number: '03',
@@ -29,7 +29,7 @@ const services = [
       "Set de bain, savon noir et tebrima, enveloppement au chocolat et fleur d’oranger, gommage, ghassoul aux fleurs d’oranger, masque visage, shampoing, ½ heure de massage et savonnage.",
     price: '500 DH',
     duration: 'Avec ½ heure de massage',
-    image: '/images/services/service-hammam-sultan.png',
+    image: `${import.meta.env.BASE_URL}images/services/service-hammam-sultan.png`,
   },
   {
     number: '04',
@@ -40,7 +40,7 @@ const services = [
     price: '45 min · 300 DH',
     secondPrice: '60 min · 400 DH',
     duration: '45 min ou 60 min',
-    image: '/images/services/service-massage-relaxant.png',
+    image: `${import.meta.env.BASE_URL}images/services/service-massage-relaxant.png`,
   },
   {
     number: '05',
@@ -51,7 +51,7 @@ const services = [
     price: '45 min · 300 DH',
     secondPrice: '60 min · 400 DH',
     duration: '45 min ou 60 min',
-    image: '/images/services/service-massage-suedois.png',
+    image: `${import.meta.env.BASE_URL}images/services/service-massage-suedois.png`,
   },
   {
     number: '06',
@@ -61,7 +61,7 @@ const services = [
       'Un soin ciblé pour soulager les tensions du dos, de la nuque et des épaules.',
     price: '45 min · 300 DH',
     duration: '45 min',
-    image: '/images/services/service-massage-dos-nuque.png',
+    image: `${import.meta.env.BASE_URL}images/services/service-massage-dos-nuque.png`,
   },
 ];
 
