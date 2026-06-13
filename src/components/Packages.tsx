@@ -2,14 +2,16 @@ const packages = [
   {
     number: '01',
     title: 'Hammam Traditionnel + Massage',
-    description: 'Hammam traditionnel avec massage au choix pour une pause complète de détente.',
+    description:
+      'Hammam traditionnel avec massage au choix pour une pause complète de détente.',
     duration: '90 min',
     price: '500 DH',
   },
   {
     number: '02',
     title: 'Hammam Royale + Massage',
-    description: 'Hammam royale avec massage au choix pour une expérience bien-être plus complète.',
+    description:
+      'Hammam royale avec massage au choix pour une expérience bien-être plus complète.',
     duration: '90 min',
     price: '600 DH',
   },
