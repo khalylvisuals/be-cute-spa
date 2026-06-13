@@ -1,27 +1,27 @@
 const galleryImages = [
   {
-    src: '/images/gallery/gallery-spa-reception.png',
+    src: `${import.meta.env.BASE_URL}images/gallery/gallery-spa-reception.png`,
     alt: 'Réception BE CUTE SPA avec ambiance burgundy, dorée et raffinée',
     label: 'Réception',
     title: 'Un accueil élégant et apaisant',
   },
   {
-    src: '/images/gallery/gallery-hammam-atmosphere.png',
+    src: `${import.meta.env.BASE_URL}images/gallery/gallery-hammam-atmosphere.png`,
     alt: 'Hammam marocain avec vapeur, bougies et lumière dorée',
     label: 'Hammam',
   },
   {
-    src: '/images/gallery/gallery-massage-room.png',
+    src: `${import.meta.env.BASE_URL}images/gallery/gallery-massage-room.png`,
     alt: 'Salle de massage premium avec serviettes, bougies et tons burgundy',
     label: 'Massage',
   },
   {
-    src: '/images/gallery/gallery-ritual-details.png',
+    src: `${import.meta.env.BASE_URL}images/gallery/gallery-ritual-details.png`,
     alt: 'Détails de rituel spa avec savon noir, huiles, fleurs et accessoires dorés',
     label: 'Rituel',
   },
   {
-    src: '/images/gallery/gallery-relaxation-tea.png',
+    src: `${import.meta.env.BASE_URL}images/gallery/gallery-relaxation-tea.png`,
     alt: 'Espace relaxation avec thé marocain, lumière chaude et ambiance spa',
     label: 'Détente',
   },
