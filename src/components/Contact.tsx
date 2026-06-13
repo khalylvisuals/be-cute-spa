@@ -22,7 +22,7 @@ export default function Contact() {
           <div>
             <div className="mb-8">
               <img
-                src="/logo.png"
+                src={`${import.meta.env.BASE_URL}logo.png`}
                 alt="BE CUTE SPA"
                 className="mb-5 h-16 w-auto max-w-[240px] object-contain sm:h-20"
               />
