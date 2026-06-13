@@ -56,7 +56,8 @@ export default function Header() {
             aria-label="BE CUTE SPA - Accueil"
           >
             <img
-src={`${import.meta.env.BASE_URL}logo.png`}              alt="BE CUTE SPA"
+src={`${import.meta.env.BASE_URL}logo.png`}              
+              alt="BE CUTE SPA"
               className="h-12 w-auto max-w-[180px] object-contain sm:h-14 sm:max-w-[210px] lg:h-16 lg:max-w-[240px]"
             />
           </a>
