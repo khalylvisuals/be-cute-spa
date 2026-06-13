@@ -315,7 +315,7 @@ Message : ${formData.message || 'Aucun message supplémentaire'}`;
                   className="flex items-center gap-3 text-ivory/70 transition-colors hover:text-gold"
                 >
                   <Smartphone className="h-5 w-5 text-gold" />
-                  <span className="font-light">+212 661 428 708</span>
+                  <span className="font-light">+212 666 948 022</span>
                 </a>
 
                 <div className="flex items-start gap-3 text-ivory/70">
