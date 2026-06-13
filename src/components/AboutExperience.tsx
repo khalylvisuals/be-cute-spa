@@ -17,7 +17,7 @@ export default function AboutExperience() {
           <div className="relative order-2 lg:order-1">
             <div className="relative aspect-[4/5] overflow-hidden border border-gold/20 bg-deep-wine">
               <img
-                src="/images/about-spa-ambience.png"
+                src={`${import.meta.env.BASE_URL}images/about-spa-ambience.png`}
                 alt="Ambiance raffinée BE CUTE SPA avec massage, bougies et tons burgundy"
                 className="h-full w-full object-cover"
               />
