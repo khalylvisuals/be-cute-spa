@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: 104px;
+    }
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #120606;
+    color: #f7f0e6;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  section[id] {
+    scroll-margin-top: 88px;
+  }
+
+  @media (min-width: 1024px) {
+    section[id] {
+      scroll-margin-top: 104px;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button,
+  a,
+  input,
+  textarea,
+  select {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input,
+  textarea,
+  select {
+    border-radius: 0;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: rgba(247, 240, 230, 0.35);
+  }
+
+  ::selection {
+    background-color: #d4af6a;
+    color: #120606;
+  }
+}
+
+@layer components {
+  .luxury-heading {
+    @apply font-light tracking-luxury uppercase leading-tight;
+  }
+
+  .gold-accent {
+    @apply text-gold;
+  }
+
+  .btn-gold {
+    @apply inline-flex min-h-12 items-center justify-center border border-gold px-6 py-3 text-center text-xs font-medium uppercase tracking-wide-plus text-gold transition-all duration-300 hover:bg-gold hover:text-deep-wine focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-deep-wine;
+  }
+
+  .btn-gold-filled {
+    @apply inline-flex min-h-12 items-center justify-center bg-gold px-6 py-3 text-center text-xs font-medium uppercase tracking-wide-plus text-deep-wine transition-all duration-300 hover:bg-soft-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-deep-wine;
+  }
+
+  .card-border {
+    @apply border border-gold/30 transition-all duration-300 hover:border-gold;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(18, 6, 6, 0.4),
+      rgba(18, 6, 6, 0.95)
+    );
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 60px rgba(212, 175, 106, 0.15);
+  }
+
+  .soft-gold-glow {
+    box-shadow: 0 18px 50px rgba(212, 175, 106, 0.16);
+  }
+}
