@@ -8,7 +8,6 @@ import Gallery from './components/Gallery';
 import BookingForm from './components/BookingForm';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
 
 function App() {
   return (
