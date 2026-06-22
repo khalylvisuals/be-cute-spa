@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="min-h-screen bg-deep-wine text-ivory font-light">
       <Header />
+
       <main>
         <Hero />
         <BenefitStrip />
@@ -23,11 +24,10 @@ function App() {
         <BookingForm />
         <Contact />
       </main>
+
       <Footer />
-      <FloatingWhatsAppButton />
     </div>
   );
 }
 
 export default App;
- 
