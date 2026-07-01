@@ -76,9 +76,7 @@ export default function Hero() {
 
             <div className="mb-6 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
               <a
-                href="https://wa.me/212537682427"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:+212537682427"
                 className="btn-gold-filled w-full sm:w-auto"
               >
                 Réserver maintenant
@@ -90,9 +88,9 @@ export default function Hero() {
             </div>
 
             <p className="text-sm font-light tracking-[0.08em] text-ivory/60">
-              Réservation :{' '}
+              Réservation par téléphone :{' '}
               <a
-                href="tel:0537682427"
+                href="tel:+212537682427"
                 className="text-gold transition-colors hover:text-soft-gold"
               >
                 0537682427
