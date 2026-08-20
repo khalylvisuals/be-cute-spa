@@ -3,7 +3,6 @@ import Hero from '../components/Hero';
 import Packages from '../components/Packages';
 import WhyChooseUs from '../components/WhyChooseUs';
 import ServicesGrid from '../components/ServicesGrid';
-import EditorialGallery from '../components/EditorialGallery';
 import Reviews from '../components/Reviews';
 import FindUs from '../components/FindUs';
 import ContactHome from '../components/ContactHome';
@@ -73,7 +72,6 @@ export default function HomePage() {
         <Hero />
         <WhyChooseUs />
         <ServicesGrid />
-        <EditorialGallery />
         <Packages />
         <Reviews />
         <FindUs />
