@@ -146,6 +146,17 @@
     text-wrap: balance;
   }
 
+  .tracking-\[0\.2em\] {
+    letter-spacing: .2em;
+    color: rgb(189 123 52 / var(--tw-text-opacity, 1));
+  }
+
+  .text-lg {
+    color: rgb(189 123 52 / var(--tw-text-opacity, 1));
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .gradient-overlay {
     background: linear-gradient(
       to bottom,
