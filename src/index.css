@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes whatsapp-in {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+@keyframes whatsapp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@layer base {
+  :root {
+    --header-h: 81px;
+  }
+
+  @media (min-width: 1024px) {
+    :root {
+      --header-h: 97px;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-h) + 8px);
+    background-color: #F6E8DA;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #F6E8DA;
+    color: #2B0206;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  section[id] {
+    scroll-margin-top: calc(var(--header-h) + 8px);
+  }
+  
+  h2[id], h3[id] {
+    scroll-margin-top: calc(var(--header-h) + 8px);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button,
+  a,
+  input,
+  textarea,
+  select {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input,
+  textarea,
+  select {
+    border-radius: 0;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: rgba(43, 2, 6, 0.55); /* #2B0206 with 55% opacity */
+  }
+
+  ::selection {
+    background-color: #8A5418; /* gold-700 for better contrast */
+    color: #FCF8EC; /* ivory-50 */
+  }
+}
+
+@layer components {
+  .luxury-heading {
+    @apply text-display font-light uppercase leading-display tracking-luxury font-[300] text-balance;
+  }
+
+  .section-heading {
+    @apply text-section font-light uppercase leading-section tracking-luxury font-[300] text-balance;
+  }
+
+  .card-heading {
+    @apply text-card font-light uppercase tracking-wide-plus font-[300] text-balance;
+  }
+
+  .gold-accent {
+    @apply text-gold-700;
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-[44px] items-center justify-center bg-maroon-700 px-6 py-3 text-center text-xs font-medium uppercase tracking-wide-plus text-ivory-50 rounded-ui transition-all duration-300 hover:bg-maroon-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-maroon-700 focus-visible:ring-offset-2 focus-visible:ring-offset-cream-100;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-[44px] items-center justify-center border border-sand-300 bg-transparent px-6 py-3 text-center text-xs font-medium uppercase tracking-wide-plus text-ink rounded-ui transition-all duration-300 hover:border-gold-700 hover:text-gold-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-700 focus-visible:ring-offset-2 focus-visible:ring-offset-cream-100;
+  }
+
+  .btn-secondary--on-dark {
+    @apply inline-flex min-h-[44px] items-center justify-center border border-sand-300/60 bg-transparent px-6 py-3 text-center text-xs font-medium uppercase tracking-wide-plus text-ivory-50 rounded-ui transition-all duration-300 hover:bg-ivory-50/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-ivory-50 focus-visible:ring-offset-2 focus-visible:ring-offset-maroon-900;
+  }
+
+  .btn-tertiary {
+    @apply inline-flex min-h-[44px] items-center justify-center text-xs font-medium uppercase tracking-wide-plus text-gold-700 transition-colors hover:text-maroon-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-700 focus-visible:ring-offset-2 focus-visible:ring-offset-cream-100;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex min-h-[44px] items-center justify-center bg-[#25D366] px-6 py-3 text-center text-xs font-medium uppercase tracking-wide-plus text-white rounded-ui transition-all duration-300 hover:bg-[#128C7E] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-cream-100;
+  }
+
+  .card-border {
+    @apply border border-sand-300 rounded-ui transition-all duration-300 hover:border-gold-500;
+  }
+
+  .form-input {
+    @apply w-full min-h-[48px] bg-cream-100/60 border border-sand-300 rounded-ui px-4 py-3 text-body font-light text-ink placeholder-ink/55 transition-colors focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-700 focus-visible:ring-offset-2 hover:border-gold-500 appearance-none;
+    line-height: 1.25;
+  }
+  
+  select.form-input {
+    padding-right: 2.75rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%232B0206'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-position: right 1rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(246, 232, 218, 0.4), /* cream-100 */
+      rgba(246, 232, 218, 0.95)
+    );
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 60px rgba(189, 123, 52, 0.15); /* gold-500 */
+  }
+
+  .soft-gold-glow {
+    box-shadow: 0 18px 50px rgba(189, 123, 52, 0.16);
+  }
+
+  .site-header {
+    background-color: rgba(43, 2, 6, 0.92);
+    backdrop-filter: blur(14px) saturate(120%);
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+  }
+
+  @supports not (backdrop-filter: blur(1px)) {
+    .site-header {
+      background-color: rgba(43, 2, 6, 0.98);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+    
+    [data-reveal],
+    .reveal {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+}

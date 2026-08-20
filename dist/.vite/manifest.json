@@ -1,0 +1,33 @@
+{
+  "_client-BY3H9sEm.js": {
+    "file": "assets/client-BY3H9sEm.js",
+    "name": "client",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "index.html": {
+    "file": "assets/app-B_6uHhdh.js",
+    "name": "app",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "_client-BY3H9sEm.js",
+      "_client-BY3H9sEm.js",
+      "src/pages/ReviewPage.tsx"
+    ],
+    "css": [
+      "assets/app-DQCHvERw.css"
+    ]
+  },
+  "src/pages/ReviewPage.tsx": {
+    "file": "assets/ReviewPage-Ci_retrv.js",
+    "name": "ReviewPage",
+    "src": "src/pages/ReviewPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  }
+}
