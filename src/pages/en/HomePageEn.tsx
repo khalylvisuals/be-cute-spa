@@ -3,7 +3,6 @@ import HeroEn from '../../components/en/HeroEn';
 import PackagesEn from '../../components/en/PackagesEn';
 import WhyChooseUsEn from '../../components/en/WhyChooseUsEn';
 import ServicesGridEn from '../../components/en/ServicesGridEn';
-import EditorialGalleryEn from '../../components/en/EditorialGalleryEn';
 import ReviewsEn from '../../components/en/ReviewsEn';
 import FindUsEn from '../../components/en/FindUsEn';
 import ContactHomeEn from '../../components/en/ContactHomeEn';
@@ -72,7 +71,6 @@ export default function HomePageEn() {
         <HeroEn />
         <WhyChooseUsEn />
         <ServicesGridEn />
-        <EditorialGalleryEn />
         <PackagesEn />
         <ReviewsEn />
         <FindUsEn />
