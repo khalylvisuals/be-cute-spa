@@ -1,8 +1,10 @@
 import Seo from '../components/Seo';
 import Hero from '../components/Hero';
+import ServicesGrid from '../components/ServicesGrid';
 import Packages from '../components/Packages';
 import WhyChooseUs from '../components/WhyChooseUs';
-import ServicesGrid from '../components/ServicesGrid';
+import FaqSection from '../components/FaqSection';
+
 import Reviews from '../components/Reviews';
 import FindUs from '../components/FindUs';
 import ContactHome from '../components/ContactHome';
@@ -59,8 +61,8 @@ export default function HomePage() {
   return (
     <>
       <Seo 
-        title="Spa Rabat Agdal | Hammam & Massage | BE CUTE SPA"
-        description="Spa à Rabat Agdal : hammam marocain traditionnel, massage relaxant et packs bien-être. Ouvert 7j/7 jusqu'à 23h. Réservation : 05 37 68 24 27."
+        title="BE CUTE SPA: Spa, Massage & Hammam Premium à Rabat Agdal"     
+        description="BE CUTE SPA - Spa, hammam marocain traditionnel, massage relaxant et packs bien-être. Ouvert 7j/7 jusqu'à 23h. Tél: 05 37 68 24 27."
         canonicalPath="/"
         preloadImage={`${import.meta.env.BASE_URL}images/hero-spa-ritual.png`}
         alternatePaths={[
@@ -70,9 +72,10 @@ export default function HomePage() {
       />
       <main>
         <Hero />
-        <WhyChooseUs />
         <ServicesGrid />
-        <Packages />
+        <Packages />        
+        <WhyChooseUs />
+       <FaqSection />
         <Reviews />
         <FindUs />
         <ContactHome />
