@@ -4,7 +4,6 @@ import ServicesGrid from '../components/ServicesGrid';
 import Packages from '../components/Packages';
 import WhyChooseUs from '../components/WhyChooseUs';
 import FaqSection from '../components/FaqSection';
-
 import Reviews from '../components/Reviews';
 import FindUs from '../components/FindUs';
 import ContactHome from '../components/ContactHome';
@@ -75,7 +74,7 @@ export default function HomePage() {
         <ServicesGrid />
         <Packages />        
         <WhyChooseUs />
-       <FaqSection />
+        <FaqSection />
         <Reviews />
         <FindUs />
         <ContactHome />
